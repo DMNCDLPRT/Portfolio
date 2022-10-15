@@ -169,13 +169,7 @@ header {
     background-image: linear-gradient(#297797, #727272);
 }
 
-/* 
-    --primary-color: #DBDBDB;
-    --secondary-color: #f9d235;
-*/
-
 .second {
-    padding: 0px 120px;
     background-color: white;
 }
 
@@ -358,6 +352,10 @@ svg:not(:root).svg-inline--fa {
     max-width: 70ch;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 
 .info a {
     text-decoration: none;
@@ -398,3 +396,40 @@ hr {
 }
 
 /* end of footer style script */
+
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+    header  {
+        display: block;
+        padding: 0px 10px;
+    }
+
+    .nav-bar ul{
+        display: grid;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .box {
+        display: block;
+        padding: 0px 5%;
+    }
+
+    .image {
+        height: 42vh;
+        padding: 5%;
+    }
+
+    .footer {
+        display: block;
+        padding: 0px 5%;
+    }
+
+    
+}
+
+/* end of responsive */

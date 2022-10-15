@@ -30,6 +30,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 140px;
+    background-image: linear-gradient(#297797, #7272720f);
 }
 
 .icon-logo {
@@ -292,6 +293,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 
+
 /* social icons start */
 .socials {
     position: relative;
@@ -342,15 +344,13 @@ svg:not(:root).svg-inline--fa {
 
 /* footer style script */
 
-footer {
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 40px 0px;
-}
+    margin: 20px 0px;
+    padding: 20px 0px;
 
-footer .socials ul {
-    display: grid;
 }
 
 .foot {
@@ -359,9 +359,42 @@ footer .socials ul {
 }
 
 
-.touch a {
+.info a {
     text-decoration: none;
-    padding-left: 30px;
+    color: #000000;
+}
+
+.info a:hover {
+    color: var(--secondary-color);
+}
+
+.info {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.info i {
+    padding-right: 15px;
+}
+
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom span {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+hr {
+    width: 90%;
+}
+
+.bottom .heart {
+    color: red;
 }
 
 /* end of footer style script */

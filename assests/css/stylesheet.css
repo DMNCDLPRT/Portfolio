@@ -30,7 +30,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 140px;
-    background-image: linear-gradient(#297797, #7272720f);
 }
 
 .icon-logo {
@@ -348,7 +347,6 @@ svg:not(:root).svg-inline--fa {
 }
 
 .foot {
-    min-width: 50ch;
     max-width: 70ch;
 }
 
@@ -400,27 +398,41 @@ hr {
 
 /* responsive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     header  {
         display: block;
+        position:relative;
         padding: 0px 10px;
+    }
+
+    .icon-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .display button {
+        display: block;
+        float: right;
     }
 
     .nav-bar ul{
         display: grid;
         text-align: left;
     }
-}
 
-@media screen and (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
     
     .box {
+        height: 100vh;
         display: block;
         padding: 0px 5%;
     }
 
     .image {
-        height: 42vh;
+        height: 30vh;
         padding: 5%;
     }
 

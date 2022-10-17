@@ -1,4 +1,4 @@
-/* 
+/*
 typing effect
 cc: https://codepen.io/Coding_Journey/pen/BEMgbX 
 */
@@ -48,8 +48,7 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 /* end of typing effect */
 
 
-/* header remove/hide  */
-
+/* header remove/hide */
 $(function () {
     $(window).on('scroll', function () {
         if ( $(window).scrollTop() > 10 ) {

@@ -4,7 +4,12 @@ html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
 }
 
 body::-webkit-scrollbar { width: 0 !important } /* hide scroll bar -webkit- (Chrome, Safari, newer versions of Opera): */
@@ -21,7 +26,7 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -30,6 +35,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 140px;
+}
+
+.navbar-toggler {
+    display: none;
 }
 
 .icon-logo {
@@ -76,18 +85,20 @@ header {
 }
 
 .navbtn {
-	background:transparent;
-	border:none;
+	background: transparent;
+	border: none;
 	color: var(--quaternary-color);
-	outline:none;
+	outline: none;
 	transition: width 2s;
 }
 
 .dropbtn {
     background: transparent;
     color: var(--quaternary-color);
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: uppercase;
     text-decoration: none;
@@ -143,7 +154,7 @@ header {
 }
 
 .wrapper{
-    height: 195vh;
+    height: 200vh;
 }
 
 .over {
@@ -154,14 +165,13 @@ header {
 /* end of sliding effect */
 
 .box {
-    position: relative;
     display: flex;
     flex-wrap: nowrap;
     gap: 1.5rem;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 0px 185px;
+    padding: 0px 175px;
 }
 
 .first {
@@ -173,7 +183,6 @@ header {
 }
 
 .container p {
-    color: var(--quaternary-color);
     font-size: 1.3rem;
     margin: 0px;
     padding-top: 15px;
@@ -233,6 +242,7 @@ header {
     height: 50px;
     line-height: 50px;
     margin-top: 2rem;
+    outline: none;
     padding: 0 25px;
     text-decoration: none;
     will-change: transform;
@@ -281,7 +291,6 @@ svg:not(:root).svg-inline--fa {
 
 .image {
     height: 390px;
-    padding: 50px;
     border-radius: 20%;
 }
 
@@ -398,50 +407,59 @@ hr {
 
 /* responsive */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     header  {
-        display: block;
-        position:relative;
-        padding: 0px 10px;
+        display: block !important;
+        position:relative !important;
+        padding: 0px 10px !important;
     }
 
     .icon-logo {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
     }
 
     .display button {
-        display: block;
-        float: right;
+        display: block !important;
+        float: right !important;
     }
 
     .nav-bar ul{
-        display: grid;
-        text-align: left;
+        display: grid !important;
+        text-align: left !important;
     }
 
     .navigation {
-        display: none;
+        display: none !important;
     }
     
     .box {
-        height: 100vh;
-        display: block;
-        padding: 0px 5%;
+        display: block !important;
+        padding: 0px 5% !important;
+    }
+
+    .bold {
+        font-size: 4rem !important;
+    }
+
+    .container .bold span {
+        font-size: 4rem !important;
+    }
+
+    .container p {
+        font-size: 1.2rem !important;
     }
 
     .image {
-        height: 30vh;
-        padding: 5%;
+        height: 30vh !important;
+        padding: 5% !important;
     }
 
     .footer {
-        display: block;
-        padding: 0px 5%;
+        display: block !important;
+        padding: 0px 5% !important;
     }
-
-    
 }
 
 /* end of responsive */

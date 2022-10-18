@@ -1,6 +1,5 @@
 /*
 typing effect
-cc: https://codepen.io/Coding_Journey/pen/BEMgbX 
 */
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");

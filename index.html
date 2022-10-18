@@ -54,7 +54,9 @@
                             <p >I like to craft solid and scalable frontend/backend products with great user experiences.</p>
                             <p >I am into <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
                             <div class="buttons">
-                                <button  class="button demo-btn second">Learn more</button>
+                                <a href="#skills">
+                                    <button  class="button demo-btn second">Learn more  <i class="fa-solid fa-arrow-right"></i></button>
+                                </a>
                             </div>
                             <div  class="socials">
                                 <ul class="social-icons">
@@ -76,23 +78,30 @@
                 <!-- ABOUT -->
                 <div class="box dislplay-items second" id="about">
                     <div class="model">
-                        <img data-aos="zoom-in-down" class="image" src="images/avatar.webp" alt="model">
+                        <img data-aos="zoom-in-down" class="profile" src="images/profile-picture-solo.png" alt="model">
                     </div>
                     <div class="container">
                         <div class="bold" data-aos="zoom-in-up">About <span>Me</span></div>
                         <p data-aos="zoom-in-up">Hello, I am Dominic, a 4th-year student of the prestigious College of Technologies at Bukidnon State University. I am currently taking up a Bachelor of Science in Information Technology. I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with a focus on fast, elegant, and accessible user experiences.</p>    
+                        <p style="padding-top: 25px; color: rgb(101, 101, 101); " data-aos="fade-up">Web-Designer | Android Developer | Gamer! HAHAHA</p>
+                        <div  class="socials" data-aos="fade-up">
+                            <ul class="social-icons">
+                            <li><a class="github" aria-label="GitHub" href="https://github.com/DMNCDLPRT" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a class="facebook" aria-label="facebook" href="https://github.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <hr>
-
                 <!-- SKILLS  -->
                 <div class="box align-items-center second" id="skills">
-                    <div class="container" data-aos="fade-up">
-                        <div class="bold">My <span>Skills</span></div>
+                    <div class="display">
+                        <div class="heading" data-aos="fade-up">Skills Overview</span></div>
+                        <p data-aos="fade-up">I have more than 4 years' experience building rich web applications. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
+                        <a href="" data-aos="fade-up">Check out my online resume</a>
                     </div>
-                    <p data-aos="fade-up">I have more than 4 years' experience building rich web applications. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
-                    <a href="" data-aos="fade-up">Check out my online resume</a>
                     <div class="items" data-aos="fade-up">
                         <ul class="carousel">
                             <li class="item">
@@ -194,13 +203,16 @@
                 <hr>
 
                 <!-- PORTFOLIO -->
-                <div class="box align-items-center second" id="portfolio">
-                    <div class="container">
-                        <div class="bold">My <span>Portfolio</span></div>
+
+                <div class="portfolio" id="portfolio">
+                    <div id="particles-js"></div>
+
+                    <div class="contents">
+                        <div class="container content">
+                            <div class="bold">My <span>Portfolio</span></div>
+                        </div>
                     </div>
-
                 </div>
-
             </section>
 
         </main>
@@ -248,6 +260,12 @@
             AOS.init(); 
         </script>
         <script src="assests/js/script.js"></script>
+
+        <!-- PARTIICLES -->
+
+        <script src="assests/js/particles.min.js"></script>
+        <script src="assests/js/app.js"></script>
+
 
     </body>
 </html>

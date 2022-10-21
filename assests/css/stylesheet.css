@@ -339,9 +339,9 @@ svg:not(:root).svg-inline--fa {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: #8a8a8a25;
+    background-color: var(--tertiary-color);
     margin: 10px;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 
 .carousel {

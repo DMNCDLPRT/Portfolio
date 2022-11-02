@@ -301,7 +301,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 .profile {
-    height: 390px;
+    width: 100%;
     border-radius: 50%;
     background-color: var(--tertiary-color);
 }
@@ -332,7 +332,7 @@ svg:not(:root).svg-inline--fa {
 
 .items::-webkit-scrollbar { width: 0 !important }
 .items {
-    max-width: 85%;
+    max-width: 100%;
     align-items: stretch;
     display: flex;
     flex-direction: row;

@@ -174,8 +174,8 @@ header {
 /* end of sliding effect */
 
 .box {
-    min-height: 100vh;
-    padding: 0px 175px;
+    min-height: 84vh;
+    padding: 61px 175px;
 }
 
 .dislplay-items {
@@ -608,7 +608,11 @@ hr {
     
     .box {
         display: block !important;
-        padding: 0px 5% !important;
+        padding: 5% !important;
+    }
+
+    .image {
+        display: none;
     }
 
     .bold {

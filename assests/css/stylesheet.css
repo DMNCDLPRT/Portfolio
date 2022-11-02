@@ -600,6 +600,8 @@ hr {
     .nav-bar ul{
         display: grid !important;
         text-align: left !important;
+        justify-content: center;
+        justify-items: center;
     }
 
     .navigation {

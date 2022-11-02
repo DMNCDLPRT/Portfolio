@@ -332,7 +332,7 @@ svg:not(:root).svg-inline--fa {
 
 .items::-webkit-scrollbar { width: 0 !important }
 .items {
-    max-width: 100%;
+    max-width: 80%;
     align-items: stretch;
     display: flex;
     flex-direction: row;
@@ -616,6 +616,10 @@ hr {
     .box {
         display: block !important;
         padding: 5% !important;
+    }
+
+    .items {
+        max-width: 100%;
     }
 
     .image {

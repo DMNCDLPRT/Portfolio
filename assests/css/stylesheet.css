@@ -301,7 +301,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 .profile {
-    width: 100%;
+    height: 369px;
     border-radius: 50%;
     background-color: var(--tertiary-color);
 }
@@ -595,6 +595,11 @@ hr {
     .display button {
         display: block !important;
         float: right !important;
+    }
+
+    .profile {
+        height: auto !important;
+        width: 100% !important;
     }
 
     .nav-bar ul{

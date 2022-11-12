@@ -18,9 +18,8 @@ body { overflow: -moz-scrollbars-none; } /* hide scroll bar -moz- (Firefox): */
 body {
     --primary-color: #F4F6FF;
     --secondary-color: #FBD46D;
-    --tertiary-color: #4F8A8B;
+    --tertiary-color: #295252;
     --quaternary-color: #07031A;
-
     /* 
     --primary-color: #DBDBDB;
     --secondary-color: #f9d235;
@@ -164,11 +163,13 @@ header {
 
 .wrapper{
     height: 200vh;
+    background-color: #2e2e2ecf;
 }
 
 .over {
     margin-top: -108vh;
     position: relative;
+    background-color: rgb(33, 33, 33);
 }
 
 /* end of sliding effect */
@@ -186,14 +187,6 @@ header {
     justify-content: center;
 }
 
-.first {
-    background-color: #4f8a8b53;
-}
-
-.second {
-    background-color: white;
-}
-
 .container p {
     font-size: 18px;
     margin: 0px;
@@ -204,9 +197,22 @@ header {
 .bold {
     font-size: 4rem;
     font-weight: 900;
-    color: var(--quaternary-color);
+    color: #ffffff;
     letter-spacing: -3px;
     line-height: 1.2;
+}
+
+.sentence {
+    color: white;
+}
+
+.title {
+    padding-top: 25px; 
+    color: rgb(101, 101, 101); 
+}
+
+.dots {
+    text-align: center;
 }
 
 .container .bold span {
@@ -325,7 +331,7 @@ svg:not(:root).svg-inline--fa {
 .heading {
     font-size: 2.6rem;
     font-weight: 900;
-    color: var(--quaternary-color);
+    color: #ffffff;
     letter-spacing: -3px;
     line-height: 1.2;
 }

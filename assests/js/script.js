@@ -45,15 +45,3 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 });
 
 /* end of typing effect */
-
-
-/* header remove/hide */
-$(function () {
-    $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 10 ) {
-            $('.navbar').addClass('active');
-        } else {
-            $('.navbar').removeClass('active');
-        }
-    });
-});

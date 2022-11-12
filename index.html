@@ -1,5 +1,5 @@
 <!Doctype HTML>
-<html>
+<html lang="En">
     <head>
         
         <meta charset="UTF-8">
@@ -51,8 +51,8 @@
                         <div class="container">
                             <div class="bold" >Hey there,
                                 </br/> I am <span>Dominic</span></div>
-                            <p >I like to craft solid and scalable frontend/backend products with great user experiences.</p>
-                            <p >I am into <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                            <p class="sentence">I like to craft solid and scalable frontend/backend products with great user experiences.</p>
+                            <p class="sentence">I am into <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
                             <div class="buttons">
                                 <a href="#skills">
                                     <button  class="button demo-btn second">Learn more  <i class="fa-solid fa-arrow-right"></i></button>
@@ -82,8 +82,8 @@
                     </div>
                     <div class="container">
                         <div class="bold" data-aos="zoom-in-up">About <span>Me</span></div>
-                        <p data-aos="zoom-in-up">Hello, I am Dominic, a 4th-year student of the prestigious College of Technologies at Bukidnon State University. I am currently taking up a Bachelor of Science in Information Technology. I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with a focus on fast, elegant, and accessible user experiences.</p>    
-                        <p style="padding-top: 25px; color: rgb(101, 101, 101); " data-aos="fade-up">Web-Designer | Android Developer | Gamer! HAHAHA</p>
+                        <p class="sentence" data-aos="zoom-in-up">Hello, I am Dominic, a 4th-year student of the prestigious College of Technologies at Bukidnon State University. I am currently taking up a Bachelor of Science in Information Technology. I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with a focus on fast, elegant, and accessible user experiences.</p>    
+                        <p class="title" data-aos="fade-up">Web-Designer | Android Developer | Gamer! HAHAHA</p>
                         <div  class="socials" data-aos="fade-up">
                             <ul class="social-icons">
                             <li><a class="github" aria-label="GitHub" href="https://github.com/DMNCDLPRT" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -99,7 +99,7 @@
                 <div class="box align-items-center second" id="skills">
                     <div class="display">
                         <div class="heading" data-aos="fade-up">Skills Overview</span></div>
-                        <p data-aos="fade-up">I have more than 4 years' experience building rich web applications. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
+                        <p class="sentence" data-aos="fade-up">I have more than 4 years' experience building rich web applications. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
                         <a href="" data-aos="fade-up">Check out my online resume</a>
                     </div>
                     <div class="items" data-aos="fade-up">
@@ -110,7 +110,7 @@
                                         <div class="img-container">
                                           <div class="img-inner">
                                             <div class="inner-skew">
-                                              <img src="images/Logo.png">
+                                              <img src="images/Logo.png" alt="logo">
                                             </div>
                                           </div>
                                         </div>
@@ -127,7 +127,7 @@
                                         <div class="img-container">
                                           <div class="img-inner">
                                             <div class="inner-skew">
-                                              <img src="images/Logo.png">
+                                              <img src="images/Logo.png" alt="logo">
                                             </div>
                                           </div>
                                         </div>
@@ -141,7 +141,7 @@
                             <li class="item">
                                 <div class="card">
                                     <div class="a-box">
-                                        <div class="img-container">
+                                        <div class="img-container" alt="logo">
                                           <div class="img-inner">
                                             <div class="inner-skew">
                                               <img src="images/Logo.png">
@@ -161,7 +161,7 @@
                                         <div class="img-container">
                                           <div class="img-inner">
                                             <div class="inner-skew">
-                                              <img src="images/Logo.png">
+                                              <img src="images/Logo.png" alt="logo">
                                             </div>
                                           </div>
                                         </div>
@@ -177,7 +177,7 @@
                                         <div class="img-container">
                                           <div class="img-inner">
                                             <div class="inner-skew">
-                                              <img src="images/Logo.png">
+                                              <img src="images/Logo.png" alt="logo">
                                             </div>
                                           </div>
                                         </div>
@@ -190,8 +190,8 @@
 
                         </ul>
                     </div>
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"><a href="#2"></a></span> 
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
                         <span class="dot" onclick="currentSlide(2)"></span> 
                         <span class="dot" onclick="currentSlide(3)"></span> 
                         <span class="dot" onclick="currentSlide(4)"></span> 
@@ -212,6 +212,35 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Messenger Chat Plugin Code -->
+            <div id="fb-root"></div>
+
+            <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+            <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "PAGE-ID");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+
+
+            <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'API-VERSION'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
 
         </main>
 

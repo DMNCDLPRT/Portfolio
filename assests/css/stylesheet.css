@@ -163,13 +163,13 @@ header {
 
 .wrapper{
     height: 200vh;
-    background-color: #2e2e2ecf;
+    background-color:#232323a3;;
 }
 
 .over {
     margin-top: -108vh;
     position: relative;
-    background-color: rgb(33, 33, 33);
+    background-color: #242424;
 }
 
 /* end of sliding effect */
@@ -223,7 +223,7 @@ header {
 
 .container span {
     font-size: 1.3rem;
-    color: var(--tertiary-color);
+    color: #00d9ff;
     margin: 0px;
     font-weight: 700;
     overflow: hidden;
